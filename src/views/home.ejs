@@ -1,0 +1,311 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+
+</head>
+<body>
+    <h1 style="text-align: center;">Welcome to Home Page</h1>
+</body>
+</html> -->
+
+
+<!-- change 1 -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fintox Food - Home</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Popup Styles */
+    .popup {
+      display: none;
+      position: fixed;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      background: white;
+      border: 2px solid #4CAF50;
+      padding: 20px;
+      z-index: 1000;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    }
+    .popup.active {
+      display: block;
+    }
+    .popup button {
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <h1 class="logo">Fintox Food</h1>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="/home">Home</a></li>
+          <li><a href="/menu">Menu</a></li>
+          <li><a href="/about">About Us</a></li>
+          <li><a href="/contact">Contact</a></li>
+          <li><a href="/logout" class="logout-btn">Logout</a></li>
+        </ul>
+      </nav>       
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <h2 style="color: black;">Delicious Food Delivered To Your Door</h2>
+      <p style="color: black;">Enjoy our gourmet meals, freshly prepared and delivered to you.</p>
+      <a href="#" class="btn">Order Now</a>
+    </div>
+  </section>
+
+  <section class="featured-dishes">
+    <div class="container">
+      <h2>Featured Dishes</h2>
+      <div class="dishes-grid">
+        <div class="dish">
+          <img src="https://img.freepik.com/free-photo/delicious-chicken-table_144627-8759.jpg" alt="Dish 1">
+          <h3>Grilled Chicken</h3>
+          <p>A savory grilled chicken dish with herbs.</p>
+        </div>
+        <div class="dish">
+          <img src="https://media.istockphoto.com/id/1161980815/photo/tasty-appetizing-pasta-with-pesto-sauce.jpg?s=612x612&w=0&k=20&c=oJ3XZ-pjLtltx16i2JTD9c9famDDNWlH8A6SnIYsQEU=" alt="Dish 2">
+          <h3>Vegetable Pasta</h3>
+          <p>Healthy and delicious vegetable pasta.</p>
+        </div>
+        <div class="dish">
+          <img src="https://www.countrysidecravings.com/wp-content/uploads/2023/04/classic-burger-image-2.jpg" alt="Dish 3">
+          <h3>Classic Burger</h3>
+          <p>Juicy burger with all the classic toppings.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="menu">
+    <div class="container">
+      <h2>Our Menu</h2>
+      <ul class="menu-list">
+        <li>Grilled Chicken - $15</li>
+        <li>Vegetable Pasta - $12</li>
+        <li>Classic Burger - $10</li>
+        <li>Caesar Salad - $8</li>
+        <li>Chocolate Cake - $6</li>
+      </ul>
+    </div>
+  </section>
+
+   Popup for signup success -->
+ <!-- Popup for signup success -->
+<!-- Popup for signup success -->
+<!-- <% if (message) { %>
+  <div class="popup active" id="signupPopup">
+    <h3>Registration Successful!</h3>
+    <p><%= message %></p>
+    <button onclick="closePopup()">OK</button>
+  </div>
+<% } %>
+
+
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2024 Fintox Food. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    function closePopup() {
+      document.getElementById('signupPopup').classList.remove('active');
+    }
+  </script>
+</body>
+</html> -->
+
+
+ 
+
+ <!-- major change 1 -->
+
+
+
+
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fintox Food - Home</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .featured-dish {
+      transition: transform 0.2s ease-in-out;
+    }
+    .featured-dish:hover {
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body class="bg-gray-100">
+  <header class="bg-green-600 p-5">
+    <div class="container mx-auto flex justify-between items-center">
+      <!-- Left section with profile button -->
+      <div class="flex items-center">
+        <div class="relative">
+          <button id="profileButton" class="text-white flex items-center focus:outline-none">
+            <img src="https://cdn-icons-png.flaticon.com/128/64/64572.png" alt="Profile" height="36 px" width="36 px" class="rounded-full mr-2"><!-- Placeholder profile image -->
+          </button>
+          <div id="profileMenu" class="absolute left-0 mt-2 w-48 bg-white rounded-lg shadow-lg hidden">
+            <a href="/profile" class="block px-4 py-2 text-gray-800 hover:bg-gray-200">My Profile</a>
+            <a href="/settings" class="block px-4 py-2 text-gray-800 hover:bg-gray-200">Settings</a>
+            <a href="/logout" class="block px-4 py-2 text-gray-800 hover:bg-gray-200">Logout</a>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Center section with "Fintox Food" -->
+      <div class="text-white text-xl font-bold">Fintox Food</div>
+  
+      <!-- Right section with navigation -->
+      <nav>
+        <ul class="flex space-x-4">
+          <li><a href="/home" class="text-white hover:text-gray-300">Home</a></li>
+          <li><a href="/menu" class="text-white hover:text-gray-300">Menu</a></li>
+          <li><a href="/about" class="text-white hover:text-gray-300">About Us</a></li>
+          <li><a href="/contact" class="text-white hover:text-gray-300">Contact</a></li>
+          <li><a href="/logout" class="text-white hover:text-gray-300">Logout</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  
+  <div id="popup" class="fixed top-4 right-4 bg-red-500 text-white p-4 rounded shadow-md hidden">
+    <p id="popup-message"></p>
+</div>
+
+<script>
+  // Extract the message from the query parameters
+  const urlParams = new URLSearchParams(window.location.search);
+  const message = urlParams.get('message');
+
+  if (message) {
+      const popup = document.getElementById('popup');
+      const popupMessage = document.getElementById('popup-message');
+
+      // Set the message text
+      popupMessage.textContent = message;
+
+      // Show the popup
+      popup.classList.remove('hidden');
+
+      // Hide the popup after 5 seconds
+      setTimeout(() => {
+          popup.classList.add('hidden');
+      }, 5000);
+  }
+</script>
+
+
+
+  
+  <section class="bg-cover bg-center h-screen flex items-center justify-center" style="background-image: url('https://example.com/your-background-image.jpg');">
+    <div class="bg-white bg-opacity-75 p-10 text-center rounded-md">
+      <h2 class="text-4xl font-bold text-gray-800">Delicious Food Delivered To Your Door</h2>
+      <p class="text-gray-700 mt-4">Enjoy our gourmet meals, freshly prepared and delivered to you.</p>
+      <a href="/menu" class="mt-6 inline-block bg-green-600 text-white px-6 py-3 rounded-lg shadow-md hover:bg-green-700">Order Now</a>
+    </div>
+  </section>
+
+  <section class="py-12 bg-gray-50">
+    <div class="container mx-auto text-center">
+      <h2 class="text-3xl font-bold text-gray-800">Featured Dishes</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-8">
+        <div class="featured-dish bg-white shadow-md rounded-lg overflow-hidden">
+          <a href="/payment/grilled-chicken">
+            <img src="https://img.freepik.com/free-photo/delicious-chicken-table_144627-8759.jpg" alt="Grilled Chicken" class="w-full h-61 object-cover">
+            <div class="p-5">
+              <h3 class="text-xl font-semibold">Grilled Chicken</h3>
+              <p class="text-gray-600 mt-2">A savory grilled chicken dish with herbs.</p>
+            </div>
+          </a>
+        </div>
+        <div class="featured-dish bg-white shadow-md rounded-lg overflow-hidden">
+          <a href="/payment/vegetable-pasta">
+            <img src="https://media.istockphoto.com/id/1161980815/photo/tasty-appetizing-pasta-with-pesto-sauce.jpg?s=612x612&w=0&k=20&c=oJ3XZ-pjLtltx16i2JTD9c9famDDNWlH8A6SnIYsQEU=" alt="Vegetable Pasta" class="w-full h-61 object-cover">
+            <div class="p-5">
+              <h3 class="text-xl font-semibold">Vegetable Pasta</h3>
+              <p class="text-gray-600 mt-2">Healthy and delicious vegetable pasta.</p>
+            </div>
+          </a>
+        </div>
+        <div class="featured-dish bg-white shadow-md rounded-lg overflow-hidden">
+          <a href="/payment/classic-burger">
+            <img src="https://www.countrysidecravings.com/wp-content/uploads/2023/04/classic-burger-image-2.jpg" alt="Classic Burger" class="w-full h-61 object-cover">
+            <div class="p-5">
+              <h3 class="text-xl font-semibold">Classic Burger</h3>
+              <p class="text-gray-600 mt-2">Juicy burger with all the classic toppings.</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-12">
+    <div class="container mx-auto text-center">
+      <h2 class="text-3xl font-bold text-gray-800">Our Menu</h2>
+      <ul class="mt-6 text-lg text-gray-700 space-y-4">
+        <li>Grilled Chicken - $15</li>
+        <li>Vegetable Pasta - $12</li>
+        <li>Classic Burger - $10</li>
+        <li>Caesar Salad - $8</li>
+        <li>Chocolate Cake - $6</li>
+      </ul>
+    </div>
+  </section>
+
+  
+  <footer class="bg-green-600 py-4">
+    <div class="container mx-auto text-center text-white">
+      <p>&copy; 2024 Fintox Food. All Rights Reserved.</p>
+    </div>
+  </footer>
+  <script>
+    document.getElementById('profileButton').addEventListener('click', function() {
+      const menu = document.getElementById('profileMenu');
+      menu.classList.toggle('hidden');
+    });
+  
+    // Close the dropdown if clicked outside of it
+    window.onclick = function(event) {
+      if (!event.target.matches('#profileButton')) {
+        const dropdowns = document.getElementsByClassName('hidden');
+        for (let i = 0; i < dropdowns.length; i++) {
+          dropdowns[i].classList.add('hidden');
+        }
+      }
+    };
+  </script>
+  
+  
+</body>
+</html>
+
+
+
+<!-- change 3 -->
+
+

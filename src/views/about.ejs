@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us - Fintox Food</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .about-dish {
+      transition: transform 0.2s ease-in-out;
+    }
+    .about-dish:hover {
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body class="bg-gray-100">
+  <header class="bg-green-600 p-5">
+    <div class="container mx-auto flex justify-between items-center">
+      <h1 class="text-white text-3xl font-bold">Fintox Food</h1>
+      <nav>
+        <ul class="flex space-x-4">
+          <li><a href="/home" class="text-white hover:text-gray-300">Home</a></li>
+          <li><a href="/menu" class="text-white hover:text-gray-300">Menu</a></li>
+          <li><a href="/about" class="text-white hover:text-gray-300">About Us</a></li>
+          <li><a href="/contact" class="text-white hover:text-gray-300">Contact</a></li>
+          <li><a href="/logout" class="text-white hover:text-gray-300">Logout</a></li>
+        </ul>
+      </nav>       
+    </div>
+  </header>
+  
+  <section class="py-10">
+    <div class="container mx-auto">
+      <h2 class="text-4xl font-bold text-center mb-6">About Us</h2>
+      <p class="text-lg text-center mb-10">At Fintox Food, we are dedicated to delivering delicious meals directly to your door, ensuring that every bite is a delightful experience.</p>
+      
+      <div class="flex flex-wrap justify-center">
+        <div class="w-full md:w-1/5 p-2 about-dish">
+          <a href="/menu/dish-1">
+            <img src="https://media.licdn.com/dms/image/v2/D4D35AQGfnJ-ARtUl-Q/profile-framedphoto-shrink_800_800/profile-framedphoto-shrink_800_800/0/1673371879364?e=1732773600&v=beta&t=Fnnng5THKHDZd1Eu8Uw_mmF_ihvxH2jDPvtMfTxDDQ8" alt="Dish 1" class="rounded-lg shadow-lg">Abhishek
+          </a>
+        </div>
+        <div class="w-full md:w-1/5 p-2 about-dish">
+          <a href="/menu/dish-2">
+            <img src="https://media.licdn.com/media/AAYQAQSOAAgAAQAAAAAAAB-zrMZEDXI2T62PSuT6kpB6qg.png" alt="Dish 2" class="rounded-lg shadow-lg">Aman
+          </a>
+        </div>
+        <div class="w-full md:w-1/5 p-2 about-dish">
+          <a href="/menu/dish-3">
+            <img src="https://media.licdn.com/dms/image/v2/D4D03AQFATjQjKYIStg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1670396575613?e=1737590400&v=beta&t=h0MkwKTPlT8U3AnFoRsNsK-FCLm29SM1kcVkqfdav6U" alt="Dish 3" class="rounded-lg shadow-lg">Rishav
+          </a>
+        </div>
+        <div class="w-full md:w-1/5 p-2 about-dish">
+          <a href="/menu/dish-4">
+            <img src="https://scontent.fdel3-4.fna.fbcdn.net/v/t39.30808-6/404247164_3588478498091132_5753133627790504645_n.jpg?stp=c0.79.960.960a_dst-jpg_s206x206&_nc_cat=104&ccb=1-7&_nc_sid=714c7a&_nc_ohc=Yp7461MwcVgQ7kNvgFiqL6V&_nc_zt=23&_nc_ht=scontent.fdel3-4.fna&_nc_gid=A9V9OKlogSCKqEVCoKytZm0&oh=00_AYBUbfRYK7V3N-YCn1NHGYBdGUdCrkLRBTUyK_hsMTn1Jg&oe=6744AA53" alt="Dish 4" height="200px" class="rounded-lg shadow-lg">Adavya
+          </a>
+        </div>
+        <div class="w-full md:w-1/5 p-2 about-dish">
+          <a href="/menu/dish-5">
+            <img src="https://images.pexels.com/photos/273661/pexels-photo-273661.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Dish 5" class="rounded-lg shadow-lg">Mirza
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-gray-800 text-white py-4">
+    <div class="container mx-auto text-center">
+      <p>&copy; 2024 Fintox Food. All Rights Reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
+

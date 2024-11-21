@@ -1,0 +1,188 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - Fintox Food</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    .header {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 0;
+      text-align: center;
+    }
+    .container {
+      width: 80%;
+      margin: auto;
+      overflow: hidden;
+    }
+    h1 {
+      color: #333;
+    }
+    .contact-info {
+      display: flex;
+      justify-content: space-between;
+      margin: 20px 0;
+    }
+    .contact-info div {
+      flex: 1;
+      padding: 10px;
+      margin: 10px;
+      background-color: #f9f9f9;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    .contact-info h2 {
+      margin-top: 0;
+    }
+    .contact-form {
+      margin-top: 20px;
+    }
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 5px 0;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    .contact-form button {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    .contact-form button:hover {
+      background-color: #45a049;
+    }
+    .footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 10px 0;
+      position: relative;
+      bottom: 0;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <h1>Contact Us</h1>
+  </header>
+
+  <div class="container">
+    <div class="contact-info">
+      <div>
+        <h2>Our Location</h2>
+        <p>123 Food Street, Flavor Town, Delicious State</p>
+      </div>
+      <div>
+        <h2>Phone</h2>
+        <p>+1 (234) 567-890</p>
+      </div>
+      <div>
+        <h2>Email</h2>
+        <p>info@fintoxfood.com</p>
+      </div>
+    </div>
+
+    <div class="contact-form">
+      <h2>Get in Touch</h2>
+      <form action="/send-message" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <p>&copy; 2024 Fintox Food. All Rights Reserved.</p>
+  </footer>
+</body>
+</html> -->
+
+
+
+<!-- change 1 -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - Fintox Food</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"> 
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .contact-box {
+      transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    }
+    .contact-box:hover {
+      transform: scale(1.05);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    }
+  </style>
+</head>
+<body class="bg-gray-100">
+  <header class="bg-green-600 p-5">
+    <div class="container mx-auto flex justify-between items-center">
+      <h1 class="text-white text-3xl font-bold">Fintox Food</h1>
+      <nav>
+        <ul class="flex space-x-4">
+          <li><a href="/home" class="text-white hover:text-gray-300">Home</a></li>
+          <li><a href="/menu" class="text-white hover:text-gray-300">Menu</a></li>
+          <li><a href="/about" class="text-white hover:text-gray-300">About Us</a></li>
+          <li><a href="/contact" class="text-white hover:text-gray-300">Contact</a></li>
+          <li><a href="/logout" class="text-white hover:text-gray-300">Logout</a></li>
+        </ul>
+      </nav>       
+    </div>
+  </header>
+
+  <div class="container mx-auto py-12">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+      <div class="bg-white p-6 shadow-md rounded-lg contact-box">
+        <h2 class="text-2xl font-bold text-gray-800">Our Location</h2>
+        <p class="mt-4 text-gray-600">123 Food Street, Flavor Town, Delicious State</p>
+      </div>
+      <div class="bg-white p-6 shadow-md rounded-lg contact-box">
+        <h2 class="text-2xl font-bold text-gray-800">Phone</h2>
+        <p class="mt-4 text-gray-600">+1 (234) 567-890</p>
+      </div>
+      <div class="bg-white p-6 shadow-md rounded-lg contact-box">
+        <h2 class="text-2xl font-bold text-gray-800">Email</h2>
+        <p class="mt-4 text-gray-600">info@fintoxfood.com</p>
+      </div>
+    </div>
+
+    <div class="mt-12">
+      <h2 class="text-3xl font-bold text-center text-gray-800">Get in Touch</h2>
+      <form action="/send-message" method="POST" class="mt-8 max-w-xl mx-auto bg-white p-6 shadow-md rounded-lg contact-box">
+        <input type="text" name="name" placeholder="Your Name" required class="w-full p-3 mb-4 border border-gray-300 rounded-lg focus:outline-none focus:border-green-500">
+        <input type="email" name="email" placeholder="Your Email" required class="w-full p-3 mb-4 border border-gray-300 rounded-lg focus:outline-none focus:border-green-500">
+        <textarea name="message" rows="5" placeholder="Your Message" required class="w-full p-3 mb-4 border border-gray-300 rounded-lg focus:outline-none focus:border-green-500"></textarea>
+        <button type="submit" class="w-full bg-green-600 text-white py-3 rounded-lg hover:bg-green-700 transition-colors">Send Message</button>
+      </form>
+    </div>
+  </div>
+
+  <footer class="bg-gray-800 py-6 mt-12">
+    <div class="text-center text-white">
+      <p>&copy; 2024 Fintox Food. All Rights Reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
